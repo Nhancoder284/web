@@ -1,0 +1,329 @@
+
+* {
+    box-sizing: border-box;
+}
+section hr{
+    width:600px;
+    color: #159205;
+}
+
+body {
+    background-color:rgb(247, 242, 234);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/*! COFFEE SHOP MAIN HEAD */
+
+.navigation-bar {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+    height: 300px;
+    width: 100%;
+    background-color: #1e7f0c;
+    z-index: 1;
+}
+
+.logo {
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.navigation-bar .search-bar {
+    
+    padding: 10%;
+    margin-top: 170px;
+    
+    
+   
+    margin-right: -440px; /* Đẩy thanh tìm kiếm về bên phải */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    margin-right: -48px;
+    background-color: #1e7f0c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Kiểu biểu tượng tìm kiếm */
+.search-bar button i {
+    font-size: 1.2em;
+}
+.logo-container h1{
+    width: 1200px;
+}
+.logo-container img{
+    margin-left: -300px;
+    margin-bottom: 80px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width:30%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.logo h1 {
+    margin-top: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #ffffff;
+    cursor: default;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+.icon-color{
+    color: #cfd9d2;
+}
+
+
+li a {
+    margin-top: -10px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #159205;
+    padding: 0.4em 0.9em;
+}
+li a.active {
+    color: rgb(255, 255, 255);
+    background-color: #504a43;
+}
+li a.active:hover {
+    opacity: 90%;
+}
+
+li a:hover {
+    background-color: #504a43;
+    color: white;
+}
+
+li.dropdown-content {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cfd9d2;
+    min-width: 160px;
+    z-index: 1;
+}
+    
+.dropdown-content a {
+    display: block;
+    padding: 1em 2.8em;
+}
+
+li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content-product {
+    display: none;
+    position: absolute;
+    background-color: #5d7569;
+    min-width: 160px;
+}
+.dropdown-content-product a {
+    display: block;
+    padding: 0.5em 2em;
+}
+li:hover .dropdown-content-product {
+    display: block;
+    position: absolute;
+    margin-left: -50px;
+    padding: 20px;
+}
+
+.dropdown-item {
+    display: flex;
+}
+
+.log-in{
+    display: inline-block;
+    padding: 0.4em 0.9em;
+    font-size: 0.9rem;
+}
+.log-in-form {
+    display: none;
+    position: absolute;
+    background-color: #ebebeb;
+    min-width: 160px;
+    z-index: 1;
+}
+.log-in-form a {
+    display: block;
+    padding: 1em 2.8em;
+}
+li:hover .log-in-form {
+    position: absolute;
+    padding: 20px;
+    margin-left: -125px;
+    display: block;
+}
+
+.sign-up {
+    display: inline-block;
+    padding: 0.4em 0.9em;
+    font-size: 0.9rem;
+}
+.sign-up-form {
+    display: none;
+    position: absolute;
+    background-color: #ebebeb;
+    min-width: 160px;
+    z-index: 1;
+}
+.sign-up-form a {
+    display: block;
+    padding: 1em 2.8em;
+}
+li:hover .sign-up-form {
+    display: block;
+    position: absolute;
+    padding: 20px;
+    margin-left: -125px;
+}
+
+/*! COFFEE SHOP SECTION */
+
+.poster {
+    width: 100%;
+}
+
+.glass-coffee {
+    padding: 8em;
+}
+.glass-parent {
+    width: 100%;
+    max-width: 1300px;
+}
+.glass-row {
+    display: flex;
+    font-size: 1.3rem;
+}
+.glass-row img {
+    margin-left: 250px;
+    width: 60%;
+    box-shadow: 0px 0px 20px black;
+    padding: 10px;
+    transform: rotate(5deg);
+}
+.glass-row p {
+    font-weight: 500;
+}
+.glass-row a {
+    font-weight: 600;
+    color: black;
+}
+.glass-column {
+    width: 80%;
+    max-width: 80%;
+}
+
+.cooperation {
+    padding: 8em;
+}
+.cooperation-parent {
+    width: 100%;
+    max-width: 1300px;
+}
+.cooperation-row {
+    display: flex;
+    font-size: 1.3rem;
+}
+.cooperation-row img {
+    width: 80%;
+    box-shadow: 0px 0px 20px black;
+    padding: 10px;
+    transform: rotate(-5deg);
+}
+.cooperation-row p {
+    font-weight: 500;
+}
+.cooperation-row a {
+    font-weight: 600;
+    color: black;
+}
+.cooperation-column {
+    width: 70%;
+    max-width: 70%;
+}
+
+
+
+/*! COFFEE SHOP FOOTER */
+
+.contact {
+    padding: 50px;
+    background-color: #ebebeb;
+}
+
+.footer {
+    padding: 8em;
+}
+.footer-parent {
+    width: 100%;
+    max-width: 1300px;
+}
+.footer-row {
+    display: flex;
+    flex-direction: row;
+}
+.footer-column {
+    margin-right: 60px;
+}
+.footer-column h3 {
+    text-transform: uppercase;
+}
+.footer-column a {
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footer-column a:hover {
+    opacity: 70%;
+}
+
+
+.made-with-love {
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.made-with-love {
+    padding: 10px;
+    background-color: #048215;
+}
+.made-with-love a {
+    text-decoration: none;
+    color: #504a43;
+}
